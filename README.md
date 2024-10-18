@@ -31,6 +31,8 @@ Kibana
 You can create Dockerfiles for each service or use Docker Compose for multi-container setup.
 
 --------------Docker Compose Code-----------------
+
+
 3. Config Files:
 
 --------------------Prometheus.conf-------------------
@@ -49,7 +51,9 @@ Create dashboards to visualize metrics like CPU usage, memory usage, request rat
 
 6. Set up Alerts in Prometheus:
 Configure Prometheus alerts in 
+
 -----------------------prometheus.yml:-----------------------------
+
 Configure the Alertmanager to handle these alerts and send notifications via Slack, email, etc.
 
 7. Deploy ELK Stack for Logs:
@@ -57,6 +61,7 @@ Elasticsearch is the storage for logs.
 Logstash collects and transforms logs.
 Kibana provides the visualization for the log data.
 Set up Filebeat or Fluentd on the application to collect logs and forward them to Logstash:
+
 ------------------filebeat---------------
 
 8. Visualize Logs in Kibana:
@@ -67,6 +72,7 @@ Create index patterns for Elasticsearch indices and visualize logs.
 Set up a CI/CD pipeline to automate the monitoring stack deployment using Jenkins or GitHub Actions.
 
 -------------------------Example GitHub Actions workflow to build and deploy Prometheus and Grafana:-----------------------
+
 
 10. Add Observability to the Application:
 Implement Prometheus metrics in your code (e.g., app_metrics endpoint).
